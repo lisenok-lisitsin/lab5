@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Hello World!" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/OD_but"
+            style="@style/Widget.Material3.Button.TonalButton.Icon"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF2B2B"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="Dialog_click"
+            android:text="@string/ODname"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FF0000"
+            android:textColorHint="#FF1A1A"
+            android:textColorLink="#FF0000" />
+
+        <Button
+            android:id="@+id/EA_but"
+            style="@style/Widget.Material3.Button.TonalButton.Icon"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF2B2B"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="Exit_Click"
+            android:text="@string/EAname"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/EntryPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFC3C3"
+            android:ems="10"
+            android:gravity="fill_horizontal"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="chb 1" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="chb 2" />
+    </LinearLayout>
+
+</LinearLayout>
